@@ -86,3 +86,45 @@ hr{
 	margin-top: 20px;
 	border: 1px solid #C4C4C4;
 }
+/*start of switch button*/
+.switch{
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+
+}
+.switch input{
+	display: none;
+}
+.slider{
+	position: absolute;
+	cursor: pointer;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-color: #ccc;
+	-webkit-transition:.4s;
+	transition: .4s;
+
+}
+input:checked + .slider{
+	background-color: red;
+}
+input:focus + .slider{
+	box-shadow: 0 0 1px #2196f3;
+}
+input:checked + .slider:before{
+	-webkit-transform:translate(26px);
+	-ms-transform:translate(26);
+	transform: translate(26px);
+
+}
+.slider.round{
+	border-radius: 34px;
+}
+
+.slider.round:before{
+	border-radius: 50%;
+}
