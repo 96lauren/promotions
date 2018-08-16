@@ -1,0 +1,88 @@
+body{
+	background-color: #f4f8f6;
+
+}
+
+header{
+	background: -webkit-linear-gradient(top left,#4386bb,#615fa7,#615fa7);
+	color: #fff;
+	padding: 15px 20px;
+}
+.holder{
+	float:right;
+	border-radius: 50%;
+	padding-right:  10px;
+}
+.name{
+	float:right;
+	line-height: 200%;
+	padding-left:20px;
+}
+nav{
+	width: 233.6px;
+	background-color: #ffffff;
+	position:fixed;
+	z-index: 1000px;
+	height: 100%;
+
+}
+nav ul{
+	list-style:none;
+	padding-top: 23px;
+}
+nav ul li{
+	text-decoration: none;
+	display: block;
+}
+li{
+	margin-top: 30px;
+}
+span{
+	padding-left: 20px;
+}
+
+button{
+	color: #fff;
+	font-size: 4px;
+    height: 36px;
+    padding: 10px 20px;
+	margin-top: 71px;
+	border-radius: 4px;
+	background-color: #07A3BA;
+	float: left;
+	border:none;
+}
+.one{
+	background-color: #fff;
+	margin-top: 29px;
+	margin-left: 273.6px;
+	padding: 20px;
+}
+	
+ input{
+ 	width: 342px;
+ 	padding: 10px;
+ 	border-radius: 8px;
+ 	border:none;
+ 	border: 0.5px solid #979797;
+ 	float: left;
+ 	margin-left: 20px;
+ }
+
+
+	.two{
+		margin-left: 273.6px;
+		width: 724px;
+		margin-top: 15px;
+		background-color: #fff;
+		padding:20px 20px;
+
+	}
+.head{
+	padding: 5px;
+}
+
+hr{
+	margin-top: 20px;
+	border: 1px solid #C4C4C4;
+}
