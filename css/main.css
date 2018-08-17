@@ -1,5 +1,6 @@
 body{
 	background-color: #f4f8f6;
+	font-family: "Times New Roman", Times, san-serif;
 
 }
 
@@ -7,6 +8,7 @@ header{
 	background: -webkit-linear-gradient(top left,#4386bb,#615fa7,#615fa7);
 	color: #fff;
 	padding: 15px 20px;
+	min-height: 150px;
 }
 .holder{
 	float:right;
@@ -21,9 +23,11 @@ header{
 nav{
 	width: 233.6px;
 	background-color: #ffffff;
-	position:fixed;
+	/*position:fixed;*/
+	float: left;
 	z-index: 1000px;
-	height: 100%;
+	height: 1000px;
+	bottom: 0px;
 
 }
 nav ul{
@@ -45,7 +49,7 @@ button{
 	color: #fff;
 	font-size: 4px;
     height: 36px;
-    padding: 10px 20px;
+    padding: 10px 10px;
 	margin-top: 71px;
 	border-radius: 4px;
 	background-color: #07A3BA;
@@ -64,7 +68,7 @@ button{
  	padding: 10px;
  	border-radius: 8px;
  	border:none;
- 	border: 0.5px solid #979797;
+ 	border: 0.2px solid #979797;
  	float: left;
  	margin-left: 20px;
  }
@@ -75,7 +79,8 @@ button{
 		width: 724px;
 		margin-top: 15px;
 		background-color: #fff;
-		padding:20px 20px;
+		padding:20px 25px;
+		color: rgba(0,0,0,0.7);
 
 	}
 .head{
@@ -84,47 +89,64 @@ button{
 
 hr{
 	margin-top: 20px;
-	border: 1px solid #C4C4C4;
+	border: 0.5px solid #C4C4C4;
 }
 /*start of switch button*/
-.switch{
-	position: relative;
-	display: inline-block;
-	width: 60px;
-	height: 34px;
-
-}
-.switch input{
-	display: none;
-}
-.slider{
-	position: absolute;
-	cursor: pointer;
-	top: 0px;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
-	background-color: #ccc;
-	-webkit-transition:.4s;
-	transition: .4s;
-
-}
-input:checked + .slider{
-	background-color: red;
-}
-input:focus + .slider{
-	box-shadow: 0 0 1px #2196f3;
-}
-input:checked + .slider:before{
-	-webkit-transform:translate(26px);
-	-ms-transform:translate(26);
-	transform: translate(26px);
-
-}
-.slider.round{
-	border-radius: 34px;
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
 }
 
-.slider.round:before{
-	border-radius: 50%;
+.switch input {
+	display:none;
 }
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #18d61e;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #18d61e;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
